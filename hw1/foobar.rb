@@ -1,12 +1,12 @@
 class Foobar
-  def baz(a)
+  def self.baz(a)
 	  a.each_with_index {|x, index| a[index] = x.to_i + 2}
 	  i = 1
 	  sum = 0
 	  while i < a.length do
-	  	sum = sum + (if a[i] < 10 then a[i] else 0 end)
+	  	sum = sum + (a[i] < 10 ? a[i] : 0)
 	  	i += 2
 	  end
-	  return a
+	  sum
   end
 end
