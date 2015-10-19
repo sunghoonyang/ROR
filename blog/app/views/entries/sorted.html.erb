@@ -1,0 +1,8 @@
+<% @entries.each do |e| %>
+	<%= Entry.titles.fetch(e.language) %> : <%= e.name %>
+	<br>
+	<%= e.text %>
+	<br>
+	<%= e.created_at %>
+	<br><br>
+<% end %>
