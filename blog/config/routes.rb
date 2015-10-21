@@ -6,12 +6,6 @@ Rails.application.routes.draw do
   resources :entries
   root 'entries#index'
   get "/:language", to: "entries#sorted"
-  get "/entries/:language", to: "entries#sorted"
-  # get "/", to: "entries#index"
-  # get "/new", to: "entries#new"
-  # get "/:id", to: "entries#show", as: :entry
-  # post "/new", to: "entries#create"
-  # get "/:language", to: "entries#sorted"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,9 +1,15 @@
-<% Entry.order('created_at DESC').each do |entry| %>
-	<%= Entry.titles.fetch(entry.language) %> : <%= entry.name %>
+<a href="/en">English</a>
+<a href="/es">Español</a>
+<a href="/cn">中文</a>
+<a href="/ko">우리말</a>
+<br><br><br>
+
+<% Entry.order('created_at DESC').each do |e| %>
+	<%= Entry.titles.fetch(e.language) %> : 
+	<% File.open("/Users/Abraxas/Documents/ROR/blog/app/assets/text/" + e.language + 
+					 "/" + e.name + ".txt", "rt").each(sep="\n") do |line| %>
+	<%= line %>
 	<br>
-	<%= entry.text %>
-	<br>
-	<%= entry.created_at %>
+	<% end %>	
 	<br><br>
 <% end %>
-

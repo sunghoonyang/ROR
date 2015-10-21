@@ -1,9 +1,4 @@
 class EntriesController < ApplicationController
-	@@titles = Hash.new()
-	@@titles.merge!({"English" => "Title", "Spanish" => "Titulo" , "Chinese" => "题目" , "Korean" => "제목" })
-	def index
-
-	end
 	def show
 		if params[:id].to_i then
 			@entry = Entry.find_by_id(params[:id])

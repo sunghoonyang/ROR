@@ -1,7 +1,12 @@
+<a href="/">Home</a>
+<br><br><br>
 <% @entries.each do |e| %>
-	<%= Entry.titles.fetch(e.language) %> : <%= e.name %>
+	<%= Entry.titles.fetch(e.language) %> : 
+	<% File.open("/Users/Abraxas/Documents/ROR/blog/app/assets/text/" + e.language + 
+					 "/" + e.name + ".txt", "rt").each(sep="\n") do |line| %>
+	<%= line %>
 	<br>
-	<%= e.text %>
+	<% end %>				 
 	<br>
 	<%= e.created_at %>
 	<br><br>

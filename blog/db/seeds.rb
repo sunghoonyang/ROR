@@ -3,6 +3,3 @@
 #
 # Examples:
 #
-%w(Squirtle Charmander Bulbasaur Pikachu).each do |name|
-  Pokemon.create name: name, level: rand(1..20), health: 100
-end
