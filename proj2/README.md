@@ -1,8 +1,8 @@
 <h1>OCCUPY GOVERNMENT</h1>
 <h3>Models</h3>
-<p>This app has three models: policy, opinion, and user. There are many policies on this website. Each policy owns many user-submitted opinions. Opinions are user-generated comments on each policy. An opinion belongs to the single author (an instance of user model), and has many users. (who choose to like or dislike the opinion and comment why) Finally, a user has many opinions.</p>
+<p>This app has three models: policy, opinion, and user. There are many policies on this website. Each policy owns many user-submitted opinions, and are either liked or disliked by the users. Opinions are user-generated comments on each policy. An opinion belongs to the single author (an instance of user model), and has many users. (who choose to like or dislike the opinion and comment why) Finally, a user has many opinions.</p>
 
-<p><strong>Policy</strong> objects have following attrs:</p><br>
+<p><strong>Policy</strong> objects have following attrs:</p>
 <ul>
   <li>title:string</li>
   <li>content:text</li>
@@ -10,7 +10,7 @@
   <li>dislikes:user[]</li>
   <li>opinions:opinion[]</li>
 </ul>
-<p><strong>Opinion</strong> objects have following attrs:</p><br>
+<p><strong>Opinion</strong> objects have following attrs:</p>
 <ul>
   <li>title:string</li>
   <li>content:text</li>
@@ -18,7 +18,7 @@
   <li>likes:user[]</li>
   <li>dislikes:user[]</li>
 </ul>
-<p><strong>User</strong> objects have following attrs:</p><br>
+<p><strong>User</strong> objects have following attrs:</p>
 <ul>
   <li>name:string</li>
   <li>opinions:opinion[]</li>
