@@ -27,13 +27,4 @@
   <li>opinion_likes:opinion[]</li>
   <li>opinion_dislikes:opinion[]</li>
 </ul>
-<p>All three models have mutual relationships.</p>
-Spec requirements
-
-1.	At least 3 models in the app, each with at least 1 validation
-2. 	At least 1 relationship in the app
-3.	At least 1 gem that is not a default gem and not a gem we introduced in class
-4.	Must have a seed file
-5.	Must have some styling (not just plain text) and deploy application to Heroku
-6.	A writeup which you will put in the README.md file
-8.	Submit a 2 minute screencast demo
+<p>All three models have mutual relationships. Also, I am a part-time student, and have some time on my hand. I want to work on this as a solo project. Hope that's okay with you guys.</p>
