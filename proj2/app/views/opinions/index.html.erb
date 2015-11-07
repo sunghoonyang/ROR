@@ -1,0 +1,13 @@
+<div class="well-lg">
+<% @opinions.each do |op| %>
+	<div class="row">
+		<div id="container">
+			<p><strong>Title: <%= op.title %></strong></p>
+		</div>
+		<div id="container">
+			<p><%= op.content %></p> 
+		</div>
+		<%= link_to "User", user_path(op.user_id) %>
+	</div><br>
+<% end %>	
+</div>

@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+#This creates opinions as a nested resource within policies. This is another part of 
+#capturing the hierarchical relationship that exists between policies and articles.
+  root 'policies#index'
+  resources :policies do
+    resources :opinions
+  end
+  resources :users do
+    resources :opinions
+  end
+end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +65,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end

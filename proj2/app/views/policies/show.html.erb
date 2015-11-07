@@ -1,0 +1,33 @@
+<div class='well-lg'>
+	<div class="row">
+		<div class = "container">
+			<p class = "text-justify">
+			<strong>Title : <%= @policy.title %></strong><br>
+			<%= @policy.content %>
+			</p>
+		</div>
+	</div>
+	<div class ="row">
+		<!-- margin for opinions -->
+		<div class = "container">
+			<% @opinions.each do |op| %>
+				<div class="row">
+					<div id="container">
+						<div class='row'>
+							<div class = 'container'>
+								<% name = User.find(op.user_id).name %>
+								<p class='text-left'><strong><%= link_to name, user_path(op.user_id) %>: <%= op.title %></strong></p>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='container col-xs-2 col-md-1'></div>
+							<div class = 'container'>
+								<p><%= op.content %></p> 
+							</div>
+						</div>
+					</div>
+				</div>
+			<% end %>	
+		</div>
+	</div>
+</div>

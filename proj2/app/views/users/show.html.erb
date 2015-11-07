@@ -1,0 +1,21 @@
+
+<div class='well-lg'>
+	<div class='container'>
+			<p>
+			Name : <%= @user.name %>
+			</p>
+	</div>
+	<div class='container'>
+		<% @Ops.each do |op| %>
+		<div class="row">
+			<div id="content">
+				<p><strong>Title: <%= op.title %></strong></p>
+			</div>
+			<div id="content">
+				<p><%= op.content %></p> 
+			</div>
+			<% policyName = Policy.find(op.policy_id).title %>
+			<%= link_to policyName, policy_path(op.policy_id) %>
+		</div>
+	</div>
+<% end %>	
