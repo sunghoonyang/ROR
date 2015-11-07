@@ -23,4 +23,5 @@
   <li>policy_likes:policy[]</li>
   <li>opinion_likes:opinion[]</li>
 </ul>
-<p>All three models have mutual relationships. Also, I am a part-time student, and have some time on my hand. I want to work on this as a solo project. Hope that's okay with you guys. I am using bootstrap gemfile with following code inserted to the gemfile:\n 'bootstrap-sass', '~> 3.2.0'</p>
+<p>All three models have mutual relationships. Also, I am a part-time student, and have some time on my hand. I want to work on this as a solo project. Hope that's okay with you guys. I am using bootstrap gemfile with following code inserted to the gemfile: 
+'bootstrap-sass', '~> 3.2.0'</p>
